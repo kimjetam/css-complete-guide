@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+}
+
+.second-item code {
+    color: green;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: blue;
+}
+
+
+code {
+    font-family: monospace;
+    color: red;
+}
+
+#first-li ~ li {
+    background-color: black;
+    color: white;
+}
+
+ol > li {
+    background-color: black;
+    color: white;
+}
