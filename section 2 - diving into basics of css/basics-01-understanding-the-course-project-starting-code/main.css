@@ -1,5 +1,9 @@
 section {
-    /*background: #ff1b68;*/
-    background: blue;
+    background: #ff1b68;
     padding-left: 20px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Anton', sans-serif;
 }
