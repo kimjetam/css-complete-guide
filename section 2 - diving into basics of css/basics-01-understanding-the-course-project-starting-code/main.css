@@ -1,4 +1,4 @@
-section {
+#product-overview{
     background: #ff1b68;
     padding-left: 20px;
 }
@@ -6,4 +6,9 @@ section {
 h1 {
     color: white;
     font-family: 'Anton', sans-serif;
+    
+}
+
+.section-title {
+    color: #2ddf5c;
 }
