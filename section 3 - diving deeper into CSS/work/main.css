@@ -28,4 +28,17 @@ body {
     width: 100%;
     font-family: inherit;
     padding: 8px 16px;
+
+}
+
+.main-nav {
+
+}
+
+.main-nav__items {
+
+}
+
+.main-nav__item {
+    display: inline-block;
 }
