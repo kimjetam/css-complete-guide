@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+}
+
+.box{
+    padding: 10px 20px 30px 40px;
+    border: 5px solid black;
+    margin: 10px 20px 30px 40px;
+    margin: 0;
+
+    height: 300px;
+    width: 49%; 
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.box:first-of-type {
+    border: 5px solid green;
+
+    /* display: none; */
+    visibility: hidden;
+} 
+
+.box:last-of-type:hover {
+    background-color: black;
+    color: white;
+}
