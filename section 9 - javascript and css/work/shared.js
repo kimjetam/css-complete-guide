@@ -5,22 +5,24 @@ const modalCloseBtn = document.querySelector('.modal .modal__action--negative');
 const toggleButton = document.querySelector('.toggle-button');
 const mobileNav = document.querySelector('.mobile-nav');
 
-selectPlanButton.forEach(x => x.addEventListener('click', () => toggleModal()));
+selectPlanButton.forEach(x => x.addEventListener('click', () => {
+    modal.classList.add("open");
+    backdrop.classList.add("open");
+}));
 
 backdrop.addEventListener('click', () => {
-    backdrop.style.display = "none";
-    mobileNav.style.display = "none";
-    modal.style.display = "none";
-    
+    mobileNav.classList.remove('open');
+    closeModal();
 });
-modalCloseBtn.addEventListener('click', () => toggleModal());
+modalCloseBtn.addEventListener('click', () => closeModal());
 
-const toggleModal = () => {
-    modal.style.display = modal.style.display == "block" ? "none" : "block";
-    backdrop.style.display = backdrop.style.display == "block" ? "none" : "block";
+const closeModal = () => {
+    modal.classList.remove('open');
+    backdrop.classList.remove('open');
 };
 
+
 toggleButton.addEventListener('click', () => {
-    mobileNav.style.display = "block";
-    backdrop.style.display = "block";
+    mobileNav.classList.add("open");
+    backdrop.classList.add("open");
 });
