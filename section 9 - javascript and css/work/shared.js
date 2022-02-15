@@ -14,11 +14,11 @@ backdrop.addEventListener('click', () => {
     mobileNav.classList.remove('open');
     closeModal();
 });
-modalCloseBtn.addEventListener('click', () => closeModal());
+modalCloseBtn?.addEventListener('click', () => closeModal());
 
 const closeModal = () => {
-    modal.classList.remove('open');
-    backdrop.classList.remove('open');
+    modal?.classList.remove('open');
+    backdrop?.classList.remove('open');
 };
 
 
